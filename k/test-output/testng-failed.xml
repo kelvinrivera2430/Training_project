@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Adhoc]">
+  <listeners>
+    <listener class-name="com.newpro.k.App"/>
+  </listeners>
+  <test thread-count="5" name="Rgression(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://facebook.com"/>
+    <classes>
+      <class name="Run.DATAPTraining">
+        <methods>
+          <include name="f" invocation-numbers="0 1 2"/>
+          <include name="beforeClass"/>
+          <include name="screenshots"/>
+        </methods>
+      </class> <!-- Run.DATAPTraining -->
+    </classes>
+  </test> <!-- Rgression(failed) -->
+</suite> <!-- Failed suite [Adhoc] -->
